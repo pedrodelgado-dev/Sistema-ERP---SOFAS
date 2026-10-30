@@ -59,9 +59,12 @@ Agregar imágenes de las principales pantallas del sistema:
 - Inventario.
 - Producción.
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 **Pedro Luis Mamani Delgado**
+**Alessandro Mijail Calcina Sanchez**
+**Mamani Lopez Maribel Gloria**
+**Jove Benites Danny Rodrigo**
 
 Estudiante de Ingeniería de Software y Sistemas.
 
