@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  MARCA DE AUTORIA | PLMD | MGML | AMCS | DRJB | UNJ 2026
+  Codigo fuente identificado como trabajo del equipo academico.
+-->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="raiz"
+           fx:controller="pe.erp.sofas.ui.ShellController"
+           styleClass="app">
+
+    <BorderPane>
+        <!-- ============ MENU LATERAL (248 px, colapsable a 72) ============ -->
+        <left>
+            <VBox fx:id="sidebar" styleClass="sidebar" prefWidth="248" minWidth="248" maxWidth="248">
+                <HBox fx:id="marca" styleClass="sidebar-brand"/>
+                <ScrollPane styleClass="nav-scroll" fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                    <VBox fx:id="nav" styleClass="nav" spacing="2"/>
+                </ScrollPane>
+                <VBox fx:id="pieMenu" styleClass="sidebar-footer" spacing="8"/>
+            </VBox>
+        </left>
+
+        <center>
+            <VBox>
+                <!-- ============ BARRA SUPERIOR ============ -->
+                <HBox fx:id="topbar" styleClass="topbar" spacing="12">
+                    <Button fx:id="btnRegresar" onAction="#onRegresar" styleClass="btn, btn-secondary, btn-back"/>
+                    <VBox fx:id="cajaTitulo" spacing="1" styleClass="topbar-title-box" minWidth="200">
+                        <Label fx:id="lblTitulo" styleClass="module-title"/>
+                        <Label fx:id="lblDescripcion" styleClass="module-desc"/>
+                    </VBox>
+                    <Region HBox.hgrow="ALWAYS" minWidth="12"/>
+                    <HBox fx:id="buscadorHost" maxWidth="380" minWidth="220" HBox.hgrow="SOMETIMES"/>
+                    <Label fx:id="lblFecha" styleClass="topbar-date" minWidth="-Infinity"/>
+                    <Button fx:id="btnTema" styleClass="btn, btn-icon, btn-ghost, topbar-btn" onAction="#onTema"/>
+                    <StackPane fx:id="campanaHost"/>
+                    <HBox fx:id="perfil" styleClass="profile-chip" spacing="10"/>
+                </HBox>
+
+                <!-- ============ CONTENIDO ============ -->
+                <StackPane fx:id="vistaHost" styleClass="content" VBox.vgrow="ALWAYS" minHeight="0" minWidth="0"/>
+            </VBox>
+        </center>
+    </BorderPane>
+
+    <!-- Capas flotantes: menus desplegables y notificaciones -->
+    <Pane fx:id="capaPopups" pickOnBounds="false" viewOrder="-50"/>
+    <VBox fx:id="zonaToasts" styleClass="toast-zone" spacing="10" pickOnBounds="false"
+          viewOrder="-100" StackPane.alignment="BOTTOM_RIGHT" maxWidth="-Infinity" maxHeight="-Infinity"
+          alignment="BOTTOM_RIGHT"/>
+</StackPane>

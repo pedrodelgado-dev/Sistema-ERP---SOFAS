@@ -1,0 +1,18 @@
+Fotografías de sofás y salas usadas como imágenes de ejemplo.
+Fuente: Unsplash (https://unsplash.com) — Licencia Unsplash: uso gratuito, comercial y no comercial,
+sin necesidad de permiso ni atribución (https://unsplash.com/license).
+
+Archivo     ID de la foto en Unsplash
+SF-001.jpg  photo-1484101403633-562f891dc89a
+SF-002.jpg  photo-1512212621149-107ffe572d2f
+SF-003.jpg  photo-1634712282287-14ed57b9cc89
+SF-004.jpg  photo-1556228453-efd6c1ff04f6
+SF-005.jpg  photo-1616486338812-3dadae4b4ace
+SF-006.jpg  photo-1573866926487-a1865558a9cf
+SF-007.jpg  photo-1493663284031-b7e3aefcae8e
+SF-008.jpg  photo-1540574163026-643ea20ade25
+SF-009.jpg  photo-1631679706909-1844bbd07221
+SF-011.jpg  photo-1583847268964-b28dc8f51f92
+login.jpg   photo-1618220179428-22790b461013
+
+SF-010 (Puff cubo) no tiene foto a propósito: la aplicación muestra el render 3D del modelo.

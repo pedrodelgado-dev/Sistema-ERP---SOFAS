@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  MARCA DE AUTORIA | PLMD | MGML | AMCS | DRJB | UNJ 2026
+  Codigo fuente identificado como trabajo del equipo academico.
+-->
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pe.erp.sofas.ui.views.carrito.CarritoViewController"
+      style="-fx-spacing: 10; -fx-padding: 15">
+    <!-- El controlador CarritoViewController se encargará de poblar dinámicamente el contenido -->
+</VBox>

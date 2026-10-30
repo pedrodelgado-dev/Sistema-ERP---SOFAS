@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  MARCA DE AUTORIA | PLMD | MGML | AMCS | DRJB | UNJ 2026
+  Codigo fuente identificado como trabajo del equipo academico.
+-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:id="raiz"
+           fx:controller="pe.erp.sofas.ui.views.login.LoginController" styleClass="login-root">
+<GridPane>
+    <columnConstraints>
+        <ColumnConstraints percentWidth="42" hgrow="ALWAYS"/>
+        <ColumnConstraints percentWidth="58" hgrow="ALWAYS"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS"/>
+    </rowConstraints>
+
+    <!-- ============ COLUMNA DEL FORMULARIO ============ -->
+    <VBox styleClass="login-left" GridPane.columnIndex="0" alignment="CENTER">
+        <padding><Insets top="32" right="48" bottom="24" left="48"/></padding>
+        <Region VBox.vgrow="ALWAYS"/>
+        <VBox fx:id="formulario" spacing="16" maxWidth="380" alignment="CENTER_LEFT">
+            <StackPane fx:id="logoHost" alignment="CENTER_LEFT"/>
+            <VBox spacing="6">
+                <VBox.margin><Insets top="16"/></VBox.margin>
+                <Label text="Bienvenido de nuevo" styleClass="login-title" wrapText="true"/>
+                <Label text="Gestiona tu fábrica y tienda de sofás desde un solo lugar." styleClass="login-subtitle" wrapText="true"/>
+            </VBox>
+
+            <VBox spacing="5">
+                <Label text="Usuario" styleClass="form-label"/>
+                <HBox fx:id="cajaUsuario" styleClass="input-icon" spacing="10" alignment="CENTER_LEFT">
+                    <TextField fx:id="txtUsuario" promptText="Tu usuario" HBox.hgrow="ALWAYS"/>
+                </HBox>
+                <Label fx:id="errUsuario" styleClass="field-error" managed="false" visible="false"/>
+            </VBox>
+
+            <VBox spacing="5">
+                <Label text="Contraseña" styleClass="form-label"/>
+                <HBox fx:id="cajaPassword" styleClass="input-icon" spacing="10" alignment="CENTER_LEFT">
+                    <StackPane HBox.hgrow="ALWAYS" alignment="CENTER_LEFT">
+                        <PasswordField fx:id="txtPassword" promptText="••••••••"/>
+                        <TextField fx:id="txtPasswordVisible" promptText="••••••••" visible="false"/>
+                    </StackPane>
+                    <Button fx:id="btnOjo" styleClass="btn, btn-icon, btn-ghost, btn-xs" onAction="#onMostrarPassword"/>
+                </HBox>
+                <Label fx:id="errPassword" styleClass="field-error" managed="false" visible="false"/>
+            </VBox>
+
+            <HBox alignment="CENTER_LEFT">
+                <CheckBox fx:id="chkRecordar" text="Recordar sesión"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Hyperlink text="¿Olvidaste tu contraseña?" onAction="#onOlvido" styleClass="link"/>
+            </HBox>
+
+            <HBox fx:id="errorGeneral" styleClass="form-error" spacing="8" alignment="CENTER_LEFT" managed="false" visible="false">
+                <Label fx:id="lblErrorGeneral" wrapText="true"/>
+            </HBox>
+
+            <Button fx:id="btnIngresar" text="Iniciar sesión" defaultButton="true" maxWidth="Infinity"
+                    styleClass="btn, btn-primary, btn-lg" onAction="#onIngresar"/>
+
+            <HBox fx:id="notaDemo" styleClass="login-note" spacing="10" alignment="CENTER_LEFT">
+                <Label text="Usuario demo: cmendoza · contraseña innova2026 (Gerente)." wrapText="true" styleClass="login-note-text"/>
+            </HBox>
+        </VBox>
+        <Region VBox.vgrow="ALWAYS"/>
+        <Label text="© 2026 INNOVA SUR S.A.C. · Fábrica y tienda de sofás · Juliaca, Puno" styleClass="login-footer"/>
+    </VBox>
+
+    <!-- ============ COLUMNA DE LA IMAGEN ============ -->
+    <StackPane fx:id="hero" styleClass="login-right" GridPane.columnIndex="1">
+        <padding><Insets top="20" right="20" bottom="20" left="0"/></padding>
+    </StackPane>
+</GridPane>
+</StackPane>

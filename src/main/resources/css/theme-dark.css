@@ -1,0 +1,96 @@
+/*==========================================================================
+ * MARCA DE AUTORIA  |  PLMD | MGML | AMCS | DRJB  |  UNJ 2026
+ * Integrantes: PLMD, MGML, AMCS, DRJB
+ * Identificacion del equipo de desarrollo del sistema ERP de sofas.
+ *==========================================================================*/
+/* INNOVA SUR Sofás · Tema oscuro: mismos tokens con valores nocturnos. */
+.root {
+    -is-bg: #0B1220;
+    -is-surface: #111A2E;
+    -is-surface2: #17223A;
+    -is-border: #24324D;
+    -is-border-strong: #2E3F63;
+    -is-text: #E5E7EB;
+    -is-ink2: #C3CCDA;
+    -is-muted: #94A3B8;
+    -is-navy: #0A1226;
+    -is-navy-2: #16213D;
+    -is-primary: #3B82F6;
+    -is-primary-hover: #2F6FE0;
+    -is-primary-soft: #172A54;
+    -is-primary-ink: #93B8FB;
+    -is-wood: #C69A6D;
+    -is-wood-soft: #2A2119;
+    -is-wood-ink: #D9B48C;
+    -is-success: #22C55E;
+    -is-success-soft: #0F2A1B;
+    -is-success-ink: #4ADE80;
+    -is-warn: #F59E0B;
+    -is-warn-ink: #FBBF24;
+    -is-warn-soft: #2D2310;
+    -is-danger: #F05252;
+    -is-danger-soft: #341416;
+    -is-danger-ink: #F98080;
+    -is-gray-soft: #1C2842;
+    -is-gray-ink: #A9B4C6;
+    -is-hover: #17223A;
+    -is-row-hover: #152038;
+    -is-skeleton: #1A2640;
+    -is-stripe-a: #2A2119;
+    -is-stripe-b: #231C15;
+    -is-input-bg: #0F1729;
+    -is-teal: #2DD4BF;
+    -is-violet: #A78BFA;
+    -is-sky: #38BDF8;
+
+    /* AtlantaFX */
+    -color-bg-default: #111A2E;
+    -color-bg-overlay: #111A2E;
+    -color-bg-subtle: #17223A;
+    -color-bg-inset: #0B1220;
+    -color-fg-default: #E5E7EB;
+    -color-fg-muted: #94A3B8;
+    -color-fg-subtle: #6B7890;
+    -color-fg-emphasis: #FFFFFF;
+    -color-border-default: #24324D;
+    -color-border-muted: #22304D;
+    -color-border-subtle: #17223A;
+    -color-accent-fg: #93B8FB;
+    -color-accent-emphasis: #3B82F6;
+    -color-accent-muted: #1E3A75;
+    -color-accent-subtle: #172A54;
+    -color-success-fg: #4ADE80;
+    -color-success-emphasis: #22C55E;
+    -color-success-muted: #14532D;
+    -color-success-subtle: #0F2A1B;
+    -color-warning-fg: #FBBF24;
+    -color-warning-emphasis: #F59E0B;
+    -color-warning-muted: #5C430F;
+    -color-warning-subtle: #2D2310;
+    -color-danger-fg: #F98080;
+    -color-danger-emphasis: #F05252;
+    -color-danger-muted: #5B1F22;
+    -color-danger-subtle: #341416;
+    -color-neutral-muted: #22304D;
+    -color-neutral-subtle: #17223A;
+}
+
+.card,
+.kanban-card {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 18, 0, 0, 6);
+}
+
+.modal,
+.popup,
+.toast,
+.side-panel {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.55), 40, 0, 0, 14);
+}
+
+.overlay-backdrop {
+    -fx-background-color: rgba(2, 6, 16, 0.62);
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2F6FE0;
+}

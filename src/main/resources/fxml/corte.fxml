@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  MARCA DE AUTORIA | PLMD | MGML | AMCS | DRJB | UNJ 2026
+  Codigo fuente identificado como trabajo del equipo academico.
+-->
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pe.erp.sofas.ui.views.produccion.CorteController" fx:id="raiz" styleClass="view" spacing="14"/>
